@@ -3,7 +3,7 @@ resource "aws_instance" "instance" {
     #using length function
     count = length(var.instance_names)
     ami = "ami-09c813fb71547fc4f"
-    instance_type = var.instance_type == "db" ? "t3.micro" : "t2.micro"
+    instance_type = var.instance_names[count.index] == "db" ? "t3.micro" : "t2.micro"
     vpc_security_group_ids = [aws_security_group.allow_ssh.id]
     
     tags = {
