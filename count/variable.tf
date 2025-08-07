@@ -3,6 +3,3 @@ variable "instance_names" {
   default = ["db","backend","frontend"]
 }
 
-variable "instance_type" {
-  default = "db"
-}
