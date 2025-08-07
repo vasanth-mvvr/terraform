@@ -3,11 +3,6 @@
 # 3rd Environment variables
 # 4th default 
 # Refer above in readme.md
-
-
-output "public_ip" {
-  value = aws_instance.db
-}
 variable "image_id" {
     type = string
     default = "ami-09c813fb71547fc4f"
