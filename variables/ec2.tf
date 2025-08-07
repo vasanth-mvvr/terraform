@@ -3,6 +3,7 @@ resource "aws_instance" "db" {
     instance_type = var.aws_instance
     vpc_security_group_ids = [aws_security_group.allow_ssh.id]
     tags = var.tags
+    
 }
 resource "aws_security_group" "allow_ssh" {
     name = var.sg_name
