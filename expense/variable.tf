@@ -1,3 +1,4 @@
+# EC-2 Instance Variables
 variable "image_id" {
     type = string
     default = "ami-09c813fb71547fc4f"
@@ -18,6 +19,7 @@ variable "common_tags" {
   }
 }
 
+# Security group variables
 variable "sg_name" {
     type = string
     default = "allow_ssh"
@@ -50,4 +52,13 @@ variable "sg_protocol" {
 variable "sg_port" {
   type = number  
   default = 0
+}
+
+#R53 Variables
+variable "zone_id" {
+  default = "Z03812272JGGITJTT5E9S"
+}
+
+variable "domain_name" {
+  default = "vasanthreddy.space"
 }
