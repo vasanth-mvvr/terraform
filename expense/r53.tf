@@ -6,5 +6,5 @@ resource "aws_route53_record" "expense" {
     ttl = 1
     records = var.instance_names[count.index] == "frontend" ? [aws_instance.expense[count.index].public_ip] : [aws_instance.expense[count.index].private_ip]
     # If records already exist
-    # allow_overwrite = yes
+    allow_overwrite = true
 }
