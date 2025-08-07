@@ -10,7 +10,7 @@ variable "instance_names" {
     default = ["db","backend","frontend"]
 }
 
-variable "tags" {
+variable "common_tags" {
   default = {
     Project = "expense"
     Environment = "dev"
