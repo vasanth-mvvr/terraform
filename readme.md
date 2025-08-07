@@ -24,3 +24,19 @@ terraform apply -auto-approve
 ```
 terraform destroy -auto-approve
 ```
+
+# If we don't want the default values to be used then we can pass it in the .tfvars 
+# If we want to pass in the CLI we can make use of command
+```
+terraform plan -var="variable_name=value"
+terraform plan -var="instance_type=t3.small"
+```
+# If we keep the other name for the file teraform.tfvars then we need to use command
+```
+terraform apply -var-file="<file-name.tfvars>"
+```
+# Environment variables
+```
+export TF_VAR_<variable name>= <value>
+export TF_VAR_instance_type = t3.large 
+```
