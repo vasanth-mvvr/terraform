@@ -11,7 +11,7 @@ variable "image_id" {
 }
 
 variable "aws_instance" {
-    default = "t3.micro" 
+    default = "t2.micro" 
     description = "Instance initialization"
   
 }
