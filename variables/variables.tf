@@ -1,3 +1,8 @@
+# 1st preference CLI
+# 2nd .tfvars
+# 3rd Environment variables
+# 4th default 
+# Refer above in readme.md
 variable "image_id" {
     type = string
     default = "ami-09c813fb71547fc4f"
@@ -6,7 +11,7 @@ variable "image_id" {
 }
 
 variable "aws_instance" {
-    default = "t3.micro"
+    default = "t3.micro" 
     description = "Instance initialization"
   
 }
