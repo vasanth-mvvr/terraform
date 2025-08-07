@@ -8,14 +8,14 @@ resource "aws_security_group" "allow_ssh" {
     name = var.sg_name
     description = var.sg_name
 
-    ingress = {
+    ingress{
         from_port = var.from_port_to_to_port
         to_port = var.from_port_to_to_port
         protocol = var.protocol
         cidr_blocks = var.cidr_blocks
     }
 
-    egress = {
+    egress{
         from_port = var.sg_port
         to_port = var.sg_port
         protocol = var.sg_protocol
