@@ -41,7 +41,7 @@ variable "protocol" {
 }
 variable "cidr_blocks" {
     type = list(string)
-    default = [ ".0.0.0.0/0" ]
+    default = [ "0.0.0.0/0" ]
 }
 variable "sg_tags" {
   default = {
