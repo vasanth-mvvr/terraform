@@ -1,0 +1,18 @@
+Workspace is used to create separate envirinments for dev, prod ,qa etcc.
+
+Listing the Workspace
+terraform Workspace list
+
+To create the Workspace 
+terraform Workspace new <name>
+
+To select the Workspace
+terraform Workspace select <name>
+
+To show current use 
+terraform Workspace show
+
+To delete the Workspace
+terraform Workspace delete <name>
+
+We need to make use of lookup in the Workspace
