@@ -26,3 +26,12 @@ variable "database_subnet" {
   type = list
   default = ["10.0.21.0/24","10.0.22.0/24"]
 }
+
+variable "is_peering_required" {
+  type = bool
+  default = true
+}
+# variable "acceptor_vpc_id" {
+#   type = string
+#   default = ""
+# }
